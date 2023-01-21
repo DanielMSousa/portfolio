@@ -1,0 +1,138 @@
+:root{
+    --backgroundcolor: #1A1B21;
+    font-size: 16px;
+}
+
+.maincontent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner{
+    width: 100%;
+    margin-bottom: 5.5rem;
+}
+
+main{
+    padding: 0 30px 0 30px;
+    max-width: 1040px;
+    display: flex;
+    flex-direction: column;
+}
+
+main h1{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+main h2{
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+main ol li, p{
+    color: #D2D2D2;
+    font-size: 1.25rem;
+    line-height: 150%;
+}
+
+main section{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.5rem;
+}
+
+ol{
+    padding-left: 2rem;
+}
+
+main .contentgroup{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 2.5rem;
+}
+
+main .contentgroup div{
+    width: 50%;
+}
+
+main .contentgroup div:first-child{
+    padding-right: 3.2rem;
+}
+
+main .contentgroup div:nth-child(2){
+    padding-left: 3.2rem;
+}
+
+main img{
+    width: 100%;
+}
+
+figcaption{
+    font-size: 0.75rem;
+}
+
+figure{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+img{
+    align-self: center;
+}
+
+quote{
+    display: block;
+    border-left: 1rem solid green;
+    padding: 1rem 0.5rem;
+    margin-left: 8%;
+    margin-top: 2rem;
+    font-size: 1.25rem;
+    background-color: #3E3F4333;
+    border-radius: 8px;
+}
+
+.papergroup{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 1.5rem;
+    row-gap: 1rem;
+}
+
+.papergroup div{
+    background-color: red;
+    height: 10rem;
+    object-fit: cover;
+}
+
+@media (max-width: 840px)
+{
+    main .contentgroup{
+        flex-direction: column;
+    }
+    
+    main .contentgroup div{
+        width: 100%;
+    }
+
+    main .contentgroup div:first-child{
+        padding-right: 0rem;
+        margin-bottom: 2.5rem;
+    }
+    
+    main .contentgroup div:nth-child(2){
+        padding-left: 0rem;
+    }
+}
+
+@media (max-width: 640px)
+{
+    .papergroup{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

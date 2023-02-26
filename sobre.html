@@ -2,14 +2,15 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre mim</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/ux.css">
+    <link rel="stylesheet" href="./css/sobre.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre mim</title>
 </head>
 <body>
     <header>
@@ -41,7 +42,7 @@
                 <div class="img-container">
                     <img src="./img/contato.png" alt="Telefone com vários balões de fala">
                 </div>
-                <div>
+                <div class="sobre">
                     <h2> Sobre mim: </h2>
                     <p>Eu sou <span class="highlight">Daniel Moreira de Sousa</span>, estudo <span class="highlight">ciência da computação</span> na UFPB. Tenho interesse em desenvolvimento e cálculo.
                         Gosto de jogos e também ler livros.</p>
@@ -60,41 +61,5 @@
             </section>
         </main>
     </div>
-    <style>
-        main{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        #bgroup{
-            margin-top: 32px;
-        }
-        .contato{
-            display: flex;
-            flex-direction: row;
-            width: 90%;
-            margin-top: 40px;
-        }
-        .img-container{
-            min-width: 360px;
-            margin-right: 24px;
-        }
-        .highlight{
-            color: #2FED00;
-        }
-        svg{
-            width: 32px;
-            fill: #C9C9C9;
-            margin-right: 8px;
-        }
-        svg:hover{
-            fill: #fff;
-        }
-        .email, .icongroup{
-            display: flex;
-            justify-content: start;
-            align-items: center;
-        }
-    </style>
 </body>
 </html>

@@ -1,0 +1,72 @@
+#bgroup{
+    margin-top: 10vh;
+}
+
+main{
+    margin-top: 20vh;
+    margin-right: 40vw;
+}
+.name{
+    font-size: 3rem;
+}
+#text{
+    font-size: 2rem;
+    color: #2FED00;
+}
+#type{
+    display: flex;
+    justify-content: start;
+    align-items: baseline;
+}
+#cursor{
+    height: 30px;
+    width: 20px;
+    background-color: #2FED00;
+    margin-left: 4px;
+    -webkit-animation-name: blink;
+    -webkit-animation-duration: 800ms;
+    animation-name: blink;
+    animation-duration: 800ms;
+    animation-iteration-count: infinite;
+}
+@-webkit-keyframes blink { 
+    0% { opacity: 0; }
+    10% { opacity: 0.2; }
+    30% { opacity: 0.7; }
+    50% { opacity: 1; }
+    80% { opacity: 0.7; }
+    90% { opacity: 0.2; }
+    100% { opacity: 0; }
+    }
+
+@keyframes blink {
+    0% { opacity: 0; }
+    10% { opacity: 0.2; }
+    30% { opacity: 0.7; }
+    50% { opacity: 1; }
+    80% { opacity: 0.7; }
+    90% { opacity: 0.2; }
+    100% { opacity: 0; }
+}
+
+@media (max-width: 1100px)
+{
+    :root{
+        font-size: 12px;
+    }
+
+    main{
+        margin-right: 20vw;
+    }
+}
+
+@media (max-width: 640x)
+{
+    :root{
+        font-size: 12px;
+    }
+
+    main{
+        margin-right: 10vw;
+    }
+}

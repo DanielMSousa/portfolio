@@ -1,3 +1,25 @@
+a {
+    color: #1e81b0;
+}
+
+a:visited {
+    color: #1e81b0;
+}
+
+#link-atual{
+    border-bottom: 1px solid #2FED00;
+    color: #ffffff;
+}
+
+nav ul a, nav ul a:visited {
+    color: #C9C9C9;
+    text-decoration: none;
+}
+
+nav ul a:hover {
+    color: #fff;
+}
+
 *, html, body {
     padding: 0;
     margin: 0;
@@ -63,4 +85,23 @@ header ul, header h1{
     header h1{
         justify-self: center;
     }
+}
+
+.fancy-button:nth-child(2){
+    margin-left: 30px;
+}
+
+a.fancy-button, a.fancy-button:visited{
+    color: white;
+    text-decoration: none;
+    font-size: 1.25rem;
+    border: 2px solid white;
+    padding: 1rem;
+    text-align: center;
+    width: 240px;
+}
+
+#ignore{
+    color: #ffffff;
+    text-decoration: none;
 }
